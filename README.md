@@ -22,7 +22,7 @@ python3 dependency_check.py --check [True] --device [device] --target [venv path
     * 패키지 재설치
     과정을 거칩니다. 진행 중 오류 발생시, `dependency_check.py`파일의 삭제 예외 패키지 이름을 추가할 수 있습니다.
     테스트코드를 실행하는데 필요한 패키지와 불필요한 패키지는 `dependency_check.json`파일에 저장됩니다.
-* `--initpkg`(optional): 추가로 설치해야 하는 패키지를 지정합니다. `dependency_check.py`파일 내의 init_packages가 있지만, 추가로 설치가 필요한 패키지가 있을 때 사용합니다.
+* `--device`(optional): 테스트코드에 `pytorch gpu`코드가 포함될 경우, device를 설정할 수 있습니다.
 * `--target`(optional): 패키지들을 저장하는 장소를 변경하는데 사용합니다.
 
 **remove unnecessary packages**
